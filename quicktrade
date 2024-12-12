@@ -1,0 +1,15 @@
+### Files
+- **`trading_bot.py`**
+  ```python
+  import random
+
+  def simple_bot():
+      prices = [random.randint(100, 200) for _ in range(10)]
+      print("Prices:", prices)
+      buy_price = min(prices)
+      sell_price = max(prices)
+      print(f"Buy at {buy_price}, Sell at {sell_price}")
+
+  if __name__ == "__main__":
+      simple_bot()
+  ```
